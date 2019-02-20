@@ -11,7 +11,6 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 # Authenticate with Spotify using the Client Credentials flow
 client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials('d6967ce2057448d4aab3ad9898119c97',  'ad7f82cc26a64f1595b6b3c4cd917243')
-#client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials(process.env.SPOTIPY_CLIENT_ID,  process.env.SPOTIPY_CLIENT_SECRET)
 spotify = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 

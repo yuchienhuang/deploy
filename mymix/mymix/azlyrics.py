@@ -104,29 +104,6 @@ def artist_filter(query):
     return result
 
 
-# def get_lyrics_url(artist,song_title):
-#     url = 'https://search.azlyrics.com/search.php?q=' +  song_title + '+' + artist 
-#     response = http.request('GET', url)
-#     soup = BeautifulSoup(response.data)
-#     td = soup.find("td", {"class": "text-left visitedlyr"})
-#     try:
-#         link = td.find('a',href=True)
-#         return link.get('href')
-#     except:
-#         return ""
-    
-
-# def original_artist(artist,song_title):
-
-#     url = get_lyrics_url(artist,song_title)
-#     response = http.request('GET', url)
-#     soup = BeautifulSoup(response.data)
-#     try:
-#         original = soup.find('span', {"class": "feat"}).text
-#         return artist_filter(original)
-    
-#     except:
-#         return None
 
 def get_lyrics_url(artist,song_title):
     url = 'https://search.azlyrics.com/search.php?q=' +  song_title + '+' + artist 
